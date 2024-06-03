@@ -1,13 +1,9 @@
 //your JS code here. If required.
  var colorSelect = document.getElementById('colorSelect');
-  let button=document.getElementByTag('input')
-button.addEventListener("click",()=>{
-	var selectedIndex = colorSelect.selectedIndex;
-	 if (selectedIndex !== -1) {
-                // Remove the selected option
-                colorSelect.remove(selectedIndex);
-            }
-})
+var button = document.getElementsByTagName('input')[0];
+button.addEventListener("click", () => {
+    colorSelect.remove(colorSelect.selectedIndex);
+});
 
 /*
 colorSelect.addEventListener("click",(event)=>{
